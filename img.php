@@ -1,0 +1,2 @@
+<?php header('Content-Type: image/svg+xml');$h=((int)($_GET['id']??0))*47%360;$h2=($h+70)%360;
+echo "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='hsl($h,75%,55%)'/><stop offset='1' stop-color='hsl($h2,70%,22%)'/></linearGradient></defs><rect width='300' height='300' fill='url(#g)'/><circle cx='150' cy='125' r='60' fill='rgba(255,255,255,.22)'/><rect x='85' y='195' width='130' height='50' rx='25' fill='rgba(0,0,0,.3)'/></svg>";
